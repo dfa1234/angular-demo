@@ -1,4 +1,26 @@
-/* You can add global styles to this file, and also import other style files */
-@use '@angular/material' as mat;
+/*
 
-@include mat.typography-hierarchy(mat.define-theme());
+Some pre-configured theme for Angular Material (not mandatory)
+
+You can remove the following CSS code if you don't want to use Angular Material
+
+*/
+@use "@angular/material" as mat;
+
+@include mat.core();
+@include mat.strong-focus-indicators();
+
+$my-theme: mat.define-theme(
+    (
+        color: (
+            theme-type: light,
+            primary: mat.$violet-palette
+        )
+    )
+);
+
+html {
+    @include mat.all-component-themes($my-theme);
+    @include mat.strong-focus-indicators-theme($my-theme);
+    @include mat.typography-hierarchy($my-theme);
+}

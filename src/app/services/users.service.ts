@@ -1,7 +1,7 @@
 import {HttpClient} from '@angular/common/http';
 import {Injectable} from '@angular/core';
 
-export const apiUrl = 'https://reqres.in/api';
+export const apiBaseUrl = 'https://my-json-server.typicode.com/dfa1234/angular-test/';
 
 @Injectable({
     providedIn: 'root'
@@ -9,4 +9,6 @@ export const apiUrl = 'https://reqres.in/api';
 export class UsersService {
     constructor(private http: HttpClient) {}
     //TODO
+
+
 }
