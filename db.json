@@ -1,4 +1,7 @@
 {
+  "profile": {
+    "name": "dfa1234"
+  },
   "users": {
     "page": 1,
     "total": 12,
@@ -87,10 +90,7 @@
         "last_name": "Howell",
         "avatar": "https://reqres.in/img/faces/12-image.jpg"
       }
-    ],
-    "profile": {
-      "name": "dfa1234"
-    }
+    ]
   },
   "user-description": [
     {
