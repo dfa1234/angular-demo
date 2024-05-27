@@ -1,7 +1,10 @@
 import {HttpClient} from '@angular/common/http';
 import {Injectable} from '@angular/core';
+import {combineLatest, concatMap, map} from 'rxjs';
+import {Post} from '../models/post.model';
+import {User} from '../models/user.model';
 
-export const apiBaseUrl = 'https://my-json-server.typicode.com/dfa1234/angular-demo';
+export const apiBaseUrl = 'https://jsonplaceholder.typicode.com';
 
 @Injectable({
     providedIn: 'root'
@@ -9,5 +12,4 @@ export const apiBaseUrl = 'https://my-json-server.typicode.com/dfa1234/angular-d
 export class UsersService {
     constructor(private http: HttpClient) {}
     //TODO
-
 }

@@ -1,14 +1,17 @@
-import {Component, OnInit} from '@angular/core';
-import {UsersService} from '../../services/users.service';
+import { Component, OnInit, inject } from '@angular/core';
+import { UsersService } from '../../services/users.service';
 
 @Component({
     selector: 'app-users-table',
     templateUrl: './users-table.component.html',
     styleUrls: ['./users-table.component.scss'],
-    standalone: true
+    standalone: true,
+    imports: []
 })
 export class UsersTableComponent implements OnInit {
-    constructor(private usersService: UsersService) {}
+    private usersService = inject(UsersService);
 
-    ngOnInit(): void {}
-}
+    ngOnInit(): void {
+
+    }
+
