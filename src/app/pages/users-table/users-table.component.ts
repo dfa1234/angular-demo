@@ -15,3 +15,4 @@ export class UsersTableComponent implements OnInit {
 
     }
 
+  }
